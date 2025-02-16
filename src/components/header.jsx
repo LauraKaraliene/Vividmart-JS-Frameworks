@@ -1,38 +1,25 @@
 import { Link } from "react-router-dom";
+// import { FaShoppingCart } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
+import CartIcon from "./icons/cartIcon.jsx";
+import styles from "./header.module.scss";
 
 export default function Header() {
+  const cartCount = 3;
+
   return (
-    <header className="navbar navbar-expand-lg navbar-dark bg-dark px-3">
-      <Link to="/" className="navbar-brand">
-        ShopLogo
-      </Link>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <nav className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav ms-auto">
-          <li className="nav-item">
-            <Link className="nav-link" to="/">
-              Home
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/cart">
-              Cart
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/contact">
-              Contact
-            </Link>
-          </li>
-        </ul>
-      </nav>
+    <header className={`navbar navbar-expand-lg ${styles.header}`}>
+      <div className="container-lg d-flex justify-content-between align-items-center">
+        <Link to="/" className={`navbar-brand fs-3 ${styles.navbarBrand}`}>
+          VividMart
+        </Link>
+        <nav className="d-flex gap-3">
+          <Link className={styles.navLink} to="/contact">
+            <FiMail size={28} />
+          </Link>
+          <CartIcon cartCount={cartCount} /> {/* Use CartIcon */}
+        </nav>
+      </div>
     </header>
   );
 }
