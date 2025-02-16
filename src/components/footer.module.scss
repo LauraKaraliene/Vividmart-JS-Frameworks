@@ -1,0 +1,11 @@
+.footer {
+  background-color: #8e44ad; /* primary-color */
+  color: white;
+  text-align: center;
+  padding: 30px;
+  transition: background-color 0.3s;
+}
+
+.footer:hover {
+  background-color: #007bff; /* secondary-color */
+}
