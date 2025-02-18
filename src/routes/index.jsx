@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import MainLayout from "../layouts/mainlayout";
+import MainLayout from "../layouts/mainLayout.jsx";
 import App from "../App";
 import Cart from "../pages/cart";
 import Contact from "../pages/contact";

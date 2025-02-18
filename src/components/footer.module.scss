@@ -1,11 +1,14 @@
+@import "../styles/_variables.scss";
+
 .footer {
-  background-color: #8e44ad; /* primary-color */
+  background-color: $primary-color;
   color: white;
   text-align: center;
+  font-family: "syncopate", sans-serif;
   padding: 30px;
   transition: background-color 0.3s;
 }
 
 .footer:hover {
-  background-color: #007bff; /* secondary-color */
+  background-color: $secondary-color;
 }

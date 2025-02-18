@@ -1,5 +1,9 @@
-function App() {
-  return <h1>Welcome to Our Store</h1>;
-}
+import HomeBanner from "./components/homeBanner.jsx";
 
-export default App;
+export default function App() {
+  return (
+    <div>
+      <HomeBanner />
+    </div>
+  );
+}

@@ -10,9 +10,12 @@
 .navbarBrand {
   color: $primary-color !important;
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
+  // font-family: "Poppins", sans-serif;
+  font-family: "Syncopate", sans-serif;
   font-size: 1.8rem;
-  font-weight: 800;
+  // font-weight: 700;
+  font-weight: bold;
+  // text-transform: uppercase;
   transition: color 0.3s ease-in-out;
 
   &:hover {
