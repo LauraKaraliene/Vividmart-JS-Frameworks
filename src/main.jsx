@@ -7,6 +7,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 // import "./index.scss";
 import "./styles/index.scss";
+import "bootstrap/dist/css/bootstrap.css";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
