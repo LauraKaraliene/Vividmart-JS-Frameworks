@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 // import { FaShoppingCart } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
-import CartIcon from "./icons/cartIcon.jsx";
-import styles from "./header.module.scss";
+import CartIcon from "./icons/CartIcon.jsx";
+import styles from "./Header.module.scss";
 
 export default function Header() {
   const cartCount = 3;

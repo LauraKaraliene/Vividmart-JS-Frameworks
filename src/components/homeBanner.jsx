@@ -1,5 +1,5 @@
 import vividmart from "../assets/vividmart.jpg";
-import styles from "./homeBanner.module.scss"; // Import SCSS file
+import styles from "./HomeBanner.module.scss"; // Import SCSS file
 
 export default function HomeBanner() {
   return (
