@@ -3,6 +3,7 @@ import MainLayout from "../layouts/MainLayout.jsx";
 import App from "../App.jsx";
 import Cart from "../pages/Cart.jsx";
 import Contact from "../pages/Contact.jsx";
+import CheckoutSuccess from "../pages/CheckoutSuccess.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact />,
+      },
+      {
+        path: "checkout-success",
+        element: <CheckoutSuccess />,
       },
     ],
   },
