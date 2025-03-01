@@ -1,5 +1,8 @@
 import { BASE_URL } from "../constants/api.js";
 import React, { useEffect, useState } from "react";
+import ProductCard from "./ProductCard.jsx";
+// import styles from "./ProductsList.module.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function ProductsList() {
   const [products, setProducts] = useState([]);
@@ -37,15 +40,17 @@ function ProductsList() {
   if (isError) return <div>Error loading products. Please try again.</div>;
 
   return (
-    <div>
-      <h1>Products</h1>
-      <ul>
+    <div className="container mt-4">
+      <div className="row">
         {products.map((product) => (
-          <li key={product.id}>
-            {product.title} - ${product.price}
-          </li>
+          <div
+            key={product.id}
+            className="col-lg-4 col-md-6 col-sm-12 gap-4 mb-4 mt-4"
+          >
+            <ProductCard product={product} />
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
