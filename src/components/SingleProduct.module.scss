@@ -1,0 +1,38 @@
+@import "../styles/_variables.scss";
+
+.productContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.productImage {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.productDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.addToCart {
+  background: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reviews {
+  grid-column: span 2;
+  margin-top: 2rem;
+}
