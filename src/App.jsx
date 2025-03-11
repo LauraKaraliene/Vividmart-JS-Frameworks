@@ -1,11 +1,12 @@
-import HomeBanner from "./components/homeBanner.jsx";
-import ProductsList from "./components/ProductsList.jsx";
+import { SearchProvider } from "./context/SearchContext";
+import HomeBanner from "./components/homeBanner";
+import ProductsList from "./components/ProductsList";
 
 export default function App() {
   return (
-    <div>
+    <SearchProvider>
       <HomeBanner />
       <ProductsList />
-    </div>
+    </SearchProvider>
   );
 }

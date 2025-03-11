@@ -1,0 +1,30 @@
+@import "../styles/_variables.scss";
+
+.searchContainer {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.searchInput {
+  height: 50px;
+  font-size: 1rem;
+  border-radius: 8px 0 0 8px;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.8);
+}
+
+.searchButton {
+  border-radius: 0 8px 8px 0;
+  background-color: #f8f9fa;
+  border-color: #ced4da;
+
+  &:hover {
+    background-color: #e9ecef;
+  }
+}
+
+.resultsContainer {
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+}
