@@ -1,10 +1,17 @@
 import styles from "./SingleProduct.module.scss";
+import useCartStore from "../store/useCartStore";
 
-const SingleProduct = ({ product, onAddToCart }) => {
+const SingleProduct = ({ product }) => {
   if (!product) return <p>Loading...</p>;
 
   const { title, description, image, price, discountedPrice, reviews } =
     product;
+  const { addToCart } = useCartStore();
+
+  const handleAddToCart = () => {
+    addToCart(product);
+  };
+
   const discount = price - discountedPrice;
 
   return (
@@ -24,9 +31,8 @@ const SingleProduct = ({ product, onAddToCart }) => {
               <span className={styles.discount}>Save ${discount}</span>
             )}
           </p>
-          <button className={styles.addToCart} onClick={onAddToCart}>
+          <button className={styles.addToCart} onClick={handleAddToCart}>
             ADD TO CART <i className="bi bi-cart"></i>{" "}
-            {/* Use Bootstrap icon */}
           </button>
         </div>
       </div>
