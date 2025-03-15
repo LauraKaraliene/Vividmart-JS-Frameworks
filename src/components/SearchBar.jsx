@@ -35,7 +35,7 @@ export default function SearchBar({ products }) {
         </Button>
       </div>
 
-      <Dropdown.Menu className={styles.resultsContainer}>
+      <Dropdown.Menu className={`${styles.resultsContainer} w-100`}>
         {filteredProducts.map((product) => (
           <Dropdown.Item
             key={product.id}

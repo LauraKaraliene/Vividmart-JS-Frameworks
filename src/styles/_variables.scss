@@ -1,3 +1,6 @@
+$btn-secondary-bg: green;
+$btn-secondary-border-color: green;
+
 $secondary-color: #d3774d;
 $accent-color: #f2b90f;
 $primary-color: #730202;
@@ -7,3 +10,17 @@ $text-color: #231814;
 $alert-success-bg: $accent-color;
 $alert-success-text: $text-color;
 $alert-success-border: darken($secondary-color, 10%);
+
+$btn-secondary-bg: $secondary-color;
+$btn-secondary-border-color: $secondary-color;
+
+$theme-colors: (
+  "primary": $primary-color,
+  "secondary": $secondary-color,
+  "success": $accent-color,
+  "info": #17a2b8,
+  "warning": #ffc107,
+  "danger": #dc3545,
+  "light": #f8f9fa,
+  "dark": $text-color,
+);

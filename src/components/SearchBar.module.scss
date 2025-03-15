@@ -15,11 +15,12 @@
 
 .searchButton {
   border-radius: 0 8px 8px 0;
-  background-color: #f8f9fa;
-  border-color: #ced4da;
+  background-color: $primary-color !important;
+  border-color: $primary-color !important;
 
   &:hover {
-    background-color: #e9ecef;
+    background-color: $secondary-color !important;
+    border-color: $secondary-color !important;
   }
 }
 
