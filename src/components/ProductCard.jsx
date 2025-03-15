@@ -3,7 +3,8 @@ import styles from "./ProductCard.module.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function ProductCard({ product }) {
-  const discountAmount = product.price - product.discountedPrice;
+  // const discountAmount = product.price - product.discountedPrice;
+  const discountAmount = (product.price - product.discountedPrice).toFixed(2);
   const discountPercentage = Math.round((discountAmount / product.price) * 100);
   const hasDiscount = discountAmount > 0;
 
@@ -20,7 +21,9 @@ function ProductCard({ product }) {
   };
 
   return (
-    <div className={`card shadow-sm h-100 ${styles.poppins}`}>
+    <div
+      className={`card shadow-sm h-100 ${styles.poppins} ${styles.productCard}`}
+    >
       {hasDiscount && (
         <div
           className={`bg-success position-absolute top-0 start-0 m-2 p-1 text-white ${styles.discountBadge}`}
@@ -39,25 +42,31 @@ function ProductCard({ product }) {
       />
 
       <div className="card-body d-flex flex-column">
-        <h4 className="card-title mb-3 fs-5 text-uppercase">{product.title}</h4>
+        <h4 className={`card-title mb-3 text-uppercase ${styles.productTitle}`}>
+          {product.title}
+        </h4>
 
-        <div className="card-text">
+        <div
+          className={`card-text d-flex flex-column align-items-start ${styles.productPrice}`}
+        >
           {hasDiscount ? (
             <>
-              <p className="pb-0 mb-0 fs-5">${product.discountedPrice}</p>{" "}
+              <p className="pb-0 mb-0 fs-6">${product.discountedPrice}</p>{" "}
               <p className="text-muted text-decoration-line-through pt-0 fs-6">
                 ${product.price}
               </p>
             </>
           ) : (
-            `$${product.price}`
+            <p className="pb-0 mb-0 fs-6">${product.price}</p>
           )}
         </div>
 
-        <p className="card-text">{renderStars(product.rating)}</p>
+        <p className={`card-text ${styles.ratingContainer}`}>
+          {renderStars(product.rating)}
+        </p>
 
         <button
-          className={`btn btn-primary mt-auto text-uppercase ${styles.syncopate}`}
+          className={`btn text-white mt-auto text-uppercase ${styles.syncopate} ${styles.viewProductBtn}`}
         >
           View Product
         </button>
