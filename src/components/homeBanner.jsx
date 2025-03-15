@@ -9,7 +9,7 @@ export default function HomeBanner() {
   return (
     <div className={`container-fluid ${styles.banner}`}>
       <div className="row justify-content-center">
-        <div className="col-12 col-md-10 col-lg-8 position-relative">
+        <div className="col-12 col-lg-6 position-relative">
           <img src={vividmart} alt="VividMart Banner" className="img-fluid" />
           <div className={styles.searchBar}>
             <SearchBar products={products} />
