@@ -13,6 +13,10 @@
   box-shadow: 0 0 50px rgba(255, 255, 255, 0.8);
 }
 
+.searchInput::placeholder {
+  font-family: "Poppins", sans-serif !important;
+}
+
 .searchButton {
   border-radius: 0 8px 8px 0;
   background-color: $primary-color !important;
@@ -25,7 +29,13 @@
 }
 
 .resultsContainer {
+  font-family: "Poppins", sans-serif;
   max-height: 200px;
   overflow-y: auto;
   z-index: 10;
+
+  .dropdown-item {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+  }
 }

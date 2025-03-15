@@ -1,13 +1,20 @@
 @import "../styles/_variables.scss";
 
+.syncopate {
+  font-family: "Syncopate", sans-serif !important;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
 .fixedImage {
-  height: 300px; /* Adjust as needed */
+  height: 300px;
   object-fit: cover;
 }
 
 .productCard {
   background: white;
-
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -33,43 +40,20 @@
 }
 
 .discountBadge {
-  background: #4caf50;
+  font-size: 15px;
   color: white;
-  font-weight: bold;
-  padding: 5px 10px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
   border-radius: 4px;
 }
 
-.productPrice {
-  font-size: 18px;
-}
-
-.discountedPrice {
-  font-weight: bold;
-}
-
-.originalPrice {
-  text-decoration: line-through;
-  opacity: 0.7;
-}
-
 .stars {
-  color: gold;
+  color: $accent-color;
 }
 
 .viewProductBtn {
-  background: purple;
   color: white;
   border: none;
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
   margin-top: 10px;
-}
-
-.viewProductBtn:hover {
-  background: darkpurple;
 }

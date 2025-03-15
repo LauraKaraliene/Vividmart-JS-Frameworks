@@ -7,7 +7,6 @@ export default function App() {
     <SearchProvider>
       <HomeBanner />
       <ProductsList />
-      <button className="btn btn-secondary">Test Button</button>
     </SearchProvider>
   );
 }

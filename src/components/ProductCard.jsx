@@ -20,9 +20,11 @@ function ProductCard({ product }) {
   };
 
   return (
-    <div className="card shadow-sm h-100">
+    <div className={`card shadow-sm h-100 ${styles.poppins}`}>
       {hasDiscount && (
-        <div className="badge bg-success position-absolute top-0 start-0 m-2">
+        <div
+          className={`bg-success position-absolute top-0 start-0 m-2 p-1 text-white ${styles.discountBadge}`}
+        >
           Save{" "}
           {discountAmount >= 1
             ? `$${discountAmount}`
@@ -37,14 +39,12 @@ function ProductCard({ product }) {
       />
 
       <div className="card-body d-flex flex-column">
-        <h4 className="card-title mb-3">{product.title}</h4>
+        <h4 className="card-title mb-3 fs-5 text-uppercase">{product.title}</h4>
 
         <div className="card-text">
           {hasDiscount ? (
             <>
-              <p className="fw-bold pb-0 mb-0 fs-5">
-                ${product.discountedPrice}
-              </p>{" "}
+              <p className="pb-0 mb-0 fs-5">${product.discountedPrice}</p>{" "}
               <p className="text-muted text-decoration-line-through pt-0 fs-6">
                 ${product.price}
               </p>
@@ -56,7 +56,11 @@ function ProductCard({ product }) {
 
         <p className="card-text">{renderStars(product.rating)}</p>
 
-        <button className="btn btn-primary mt-auto">View Product</button>
+        <button
+          className={`btn btn-primary mt-auto text-uppercase ${styles.syncopate}`}
+        >
+          View Product
+        </button>
       </div>
     </div>
   );

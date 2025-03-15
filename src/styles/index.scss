@@ -9,15 +9,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: $background-color;
-  color: $text-color;
+  // background-color: $background-color;
+  // color: $text-color;
 }
 
-.btn-custom {
-  @extend .btn-warning;
+.syncopate {
+  font-family: "Syncopate", sans-serif;
+}
 
-  &:hover {
-    @extend .btn-danger;
-  }
+.poppins {
+  font-family: "Poppins", sans-serif;
 }
