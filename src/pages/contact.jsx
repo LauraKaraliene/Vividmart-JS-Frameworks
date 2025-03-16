@@ -5,7 +5,7 @@ import { Container } from "react-bootstrap";
 function Contact() {
   return (
     <Container className="mt-5 col-md-4">
-      <h2 className="text-center">Contact Us</h2>
+      <h2 className="text-center poppins">Contact Us</h2>
       <ContactForm />
     </Container>
   );

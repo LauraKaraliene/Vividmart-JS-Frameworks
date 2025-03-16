@@ -1,0 +1,22 @@
+@import "../styles/_variables.scss";
+
+// input::placeholder,
+// textarea::placeholder {
+//   opacity: 0.5;
+//   color: #b23939;
+// }
+
+// .form {
+//   font-family: "poppins", sans-serif;
+// }
+.submit {
+  background-color: $primary-color !important;
+  border-color: $primary-color !important;
+  border: 1px solid $primary-color !important;
+  transition: background 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $secondary-color !important;
+    border-color: $secondary-color !important;
+  }
+}

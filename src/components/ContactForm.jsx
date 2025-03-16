@@ -1,20 +1,26 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { Form, Button } from "react-bootstrap";
+import styles from "./ContactForm.module.scss";
 
 function ContactForm() {
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
 
   function onSubmit(data) {
     console.log(data);
+    reset();
   }
 
   return (
-    <Form onSubmit={handleSubmit(onSubmit)} className="p-4 border rounded">
+    <Form
+      onSubmit={handleSubmit(onSubmit)}
+      className="p-4 border rounded poppins"
+    >
       <Form.Group className="mb-3">
         <Form.Label>Full Name</Form.Label>
         <Form.Control
@@ -68,7 +74,11 @@ function ContactForm() {
         <p className="text-danger">{errors.body?.message}</p>
       </Form.Group>
 
-      <Button type="submit" variant="primary">
+      <Button
+        type="submit"
+        variant="primary"
+        className={`syncopate w-100 ${styles.submit}`}
+      >
         Submit
       </Button>
     </Form>
