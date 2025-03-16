@@ -1,13 +1,5 @@
 @import "../styles/_variables.scss";
 
-.syncopate {
-  font-family: "Syncopate", sans-serif !important;
-}
-
-.poppins {
-  font-family: "Poppins", sans-serif;
-}
-
 .fixedImage {
   height: 300px;
   object-fit: cover;
@@ -24,36 +16,17 @@
   }
 }
 
-.discountBadge {
-  font-size: 15px;
-  color: white;
-  border-radius: 4px;
-  min-height: 24px;
-  display: flex;
-  align-items: center;
-}
-
 .productTitle {
-  font-size: 16px;
   font-weight: 600;
   min-height: 40px;
-  display: flex;
-  align-items: center;
 }
 
 .productPrice {
-  font-size: 14px;
   min-height: 65px;
-}
-
-.stars {
-  color: $accent-color;
 }
 
 .ratingContainer {
   min-height: 30px;
-  display: flex;
-  margin-top: auto;
 }
 
 .viewProductBtn {

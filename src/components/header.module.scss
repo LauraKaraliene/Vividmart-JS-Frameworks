@@ -4,18 +4,11 @@
   background-color: $background-color;
   padding: 1rem 2rem;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  border-bottom: 2px solid darken($background-color, 10%);
+  border-bottom: 2px solid rgba($primary-color, 0.1);
 }
 
 .navbarBrand {
   color: $primary-color !important;
-  text-decoration: none;
-  // font-family: "Poppins", sans-serif;
-  font-family: "Syncopate", sans-serif;
-  font-size: 1.8rem;
-  // font-weight: 700;
-  font-weight: bold;
-  // text-transform: uppercase;
   transition: color 0.3s ease-in-out;
 
   &:hover {

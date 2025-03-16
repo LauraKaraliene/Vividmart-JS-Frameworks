@@ -1,24 +1,12 @@
 import React from "react";
 import styles from "./ProductCard.module.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
+import RatingStars from "./RatingStars";
 
 function ProductCard({ product }) {
-  // const discountAmount = product.price - product.discountedPrice;
   const discountAmount = (product.price - product.discountedPrice).toFixed(2);
   const discountPercentage = Math.round((discountAmount / product.price) * 100);
   const hasDiscount = discountAmount > 0;
-
-  const renderStars = (rating) => {
-    const fullStars = Math.floor(rating);
-    const emptyStars = 5 - fullStars;
-    return (
-      <span className={styles.stars}>
-        {"★".repeat(fullStars)}
-        {"☆".repeat(emptyStars)}
-        <span className={styles.ratingNumber}> ({product.rating}/5)</span>
-      </span>
-    );
-  };
 
   return (
     <div
@@ -26,7 +14,7 @@ function ProductCard({ product }) {
     >
       {hasDiscount && (
         <div
-          className={`bg-success position-absolute top-0 start-0 m-2 p-1 text-white ${styles.discountBadge}`}
+          className={`bg-success position-absolute top-0 start-0 m-2 p-1 text-white rounded-2 align-items-center fs-6 ${styles.discountBadge}`}
         >
           Save{" "}
           {discountAmount >= 1
@@ -42,7 +30,9 @@ function ProductCard({ product }) {
       />
 
       <div className="card-body d-flex flex-column">
-        <h4 className={`card-title mb-3 text-uppercase ${styles.productTitle}`}>
+        <h4
+          className={`card-title mb-3 text-uppercase d-flex align-items-center fs-6 ${styles.productTitle}`}
+        >
           {product.title}
         </h4>
 
@@ -61,8 +51,8 @@ function ProductCard({ product }) {
           )}
         </div>
 
-        <p className={`card-text ${styles.ratingContainer}`}>
-          {renderStars(product.rating)}
+        <p className={`card-text d-flex mt-auto${styles.ratingContainer}`}>
+          <RatingStars rating={product.rating} />
         </p>
 
         <button

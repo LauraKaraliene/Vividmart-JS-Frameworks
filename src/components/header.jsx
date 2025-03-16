@@ -10,7 +10,10 @@ export default function Header() {
   return (
     <header className={`navbar navbar-expand-lg ${styles.header}`}>
       <div className="container-lg d-flex justify-content-between align-items-center">
-        <NavLink to="/" className={`navbar-brand fs-3 ${styles.navbarBrand}`}>
+        <NavLink
+          to="/"
+          className={`navbar-brand syncopate fs-3 fw-bold text-decoration-none ${styles.navbarBrand}`}
+        >
           <span>Vivid</span>Mart
         </NavLink>
         <nav className="d-flex gap-3">

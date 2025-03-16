@@ -6,7 +6,7 @@ $text-color: #231814;
 
 $alert-success-bg: $accent-color;
 $alert-success-text: $text-color;
-$alert-success-border: darken($secondary-color, 10%);
+$alert-success-border: 2px solid rgba($primary-color, 0.1);
 
 $btn-secondary-bg: $secondary-color;
 $btn-secondary-border-color: $secondary-color;
@@ -21,3 +21,11 @@ $theme-colors: (
   "light": #f8f9fa,
   "dark": $text-color,
 );
+
+.syncopate {
+  font-family: "Syncopate", sans-serif !important;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
