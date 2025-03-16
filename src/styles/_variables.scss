@@ -1,13 +1,16 @@
+//colors
 $secondary-color: #d3774d;
 $accent-color: #f2b90f;
 $primary-color: #730202;
 $background-color: #f8f2eb;
 $text-color: #231814;
 
+//alerts
 $alert-success-bg: $accent-color;
 $alert-success-text: $text-color;
 $alert-success-border: 2px solid rgba($primary-color, 0.1);
 
+//buttons
 $btn-secondary-bg: $secondary-color;
 $btn-secondary-border-color: $secondary-color;
 
@@ -22,6 +25,7 @@ $theme-colors: (
   "dark": $text-color,
 );
 
+//fonts
 .syncopate {
   font-family: "Syncopate", sans-serif !important;
 }

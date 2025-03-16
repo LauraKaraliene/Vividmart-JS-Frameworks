@@ -1,21 +1,15 @@
-// import styles from "./SingleProductReviews.module.scss";
 import RatingStars from "./RatingStars";
 
 const SingleProductReviews = ({ reviews }) => {
   return (
-    <div className={`mt-5 poppins ${styles.reviews}`}>
+    <div className="mt-5 poppins">
       <h4 className="border-bottom pb-3">Reviews</h4>
       {reviews?.length ? (
         reviews.map((review, index) => (
-          <div
-            key={index}
-            className={`d-flex flex-column border-bottom py-3 ${styles.reviewItem}`}
-          >
-            <strong className={`pb-2 fw-bold fs-6 ${styles.username}`}>
-              {review.username}
-            </strong>
+          <div key={index} className="d-flex flex-column border-bottom py-3">
+            <strong className="pb-2 fw-bold fs-6">{review.username}</strong>
             <RatingStars rating={review.rating} />
-            <p className={`fs-6 ${styles.comment}`}>{review.description}</p>
+            <p className="fs-6">{review.description}</p>
           </div>
         ))
       ) : (
