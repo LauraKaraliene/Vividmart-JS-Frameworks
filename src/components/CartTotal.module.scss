@@ -1,0 +1,9 @@
+@import "../styles/_variables.scss";
+
+.checkoutButton {
+  border: $primary-color !important;
+}
+
+.checkoutButton:hover {
+  background-color: $secondary-color !important;
+}
