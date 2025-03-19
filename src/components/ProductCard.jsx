@@ -10,7 +10,7 @@ function ProductCard({ product }) {
 
   return (
     <div
-      className={`card shadow-sm h-100 ${styles.poppins} ${styles.productCard}`}
+      className={`card border-0 shadow h-100 ${styles.poppins} ${styles.productCard}`}
     >
       {hasDiscount && (
         <div
