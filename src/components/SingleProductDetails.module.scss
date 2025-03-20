@@ -1,20 +1,6 @@
 @import "../styles/_variables.scss";
 
-h1,
-p {
-  font-family: "Poppins", sans-serif;
-}
-
 .addToCart {
-  font-family: "Syncopate", sans-serif;
-  background-color: $primary-color !important;
-  border-color: $primary-color !important;
-  border: 1px solid $primary-color !important;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
   transition: background 0.2s ease-in-out;
 
   &:hover {

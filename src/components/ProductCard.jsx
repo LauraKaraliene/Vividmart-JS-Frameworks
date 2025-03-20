@@ -56,7 +56,7 @@ function ProductCard({ product }) {
         </p>
 
         <button
-          className={`btn text-white mt-auto text-uppercase ${styles.syncopate} ${styles.viewProductBtn}`}
+          className={`btn btn-primary text-white mt-auto text-uppercase ${styles.syncopate} ${styles.viewProductBtn}`}
         >
           View Product
         </button>

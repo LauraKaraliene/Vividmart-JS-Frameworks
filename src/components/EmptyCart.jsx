@@ -8,7 +8,7 @@ const EmptyCart = () => {
     <div className={`mt-5 mx-auto text-center ${styles.emptyCart}`}>
       <p className="text-dark fs-5">Your cart is empty!</p>
       <button
-        className="btn text-white mt-2 px-3 syncopate text-uppercase"
+        className="btn btn-primary text-white mt-2 px-3 syncopate text-uppercase"
         onClick={() => navigate("/")}
       >
         Return to Store

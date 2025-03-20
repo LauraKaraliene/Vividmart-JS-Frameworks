@@ -44,7 +44,6 @@ function ProductsList() {
   if (isError) return <div>Error loading products. Please try again.</div>;
 
   return (
-    // <div className={`container mt-4 ${styles.productsContainer}`}>
     <div className="container mt-4">
       <div className="row">
         {products.length > 0 ? (

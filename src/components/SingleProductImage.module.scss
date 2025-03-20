@@ -1,0 +1,13 @@
+@import "../styles/_variables.scss";
+
+.productImage {
+  //   width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+
+  @media (max-width: 768px) {
+    max-width: 350px !important;
+    margin: 0 auto;
+  }
+}

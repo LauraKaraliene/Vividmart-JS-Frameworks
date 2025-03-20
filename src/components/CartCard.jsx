@@ -9,7 +9,7 @@ const CartCard = ({ item, onIncrease, onDecrease, onRemove }) => {
       {/* Image */}
       <div className={styles.imageContainer}>
         <img
-          className="w-100 h-100 "
+          className="w-100 h-100 object-fit-cover"
           src={item.image.url}
           alt={item.image.alt}
         />

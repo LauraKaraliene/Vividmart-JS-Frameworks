@@ -12,12 +12,14 @@ const SingleProductDetails = ({ product }) => {
   const discount = product.price - product.discountedPrice;
 
   return (
-    <div className={`d-flex flex-column h-100 ${styles.productDetails}`}>
+    <div
+      className={`d-flex flex-column h-100 poppins ${styles.productDetails}`}
+    >
       <h1>{product.title}</h1>
       <RatingStars rating={product.rating} />
 
       <p className="fs-6 pt-3">{product.description}</p>
-      <div className={`d-flex flex-column pt-3 ${styles.priceSection}`}>
+      <div className={`d-flex flex-column mb-4 pt-3 ${styles.priceSection}`}>
         <span className={`fs-5 fw-bold ${styles.discountedPrice}`}>
           ${product.discountedPrice}
         </span>
@@ -30,7 +32,7 @@ const SingleProductDetails = ({ product }) => {
         )}
       </div>
       <button
-        className={`text-white mt-auto p-2 text-uppercase ${styles.addToCart}`}
+        className={`btn btn-primary syncopate text-uppercase text-white mt-auto p-2 text-uppercase ${styles.addToCart}`}
         onClick={handleAddToCart}
       >
         ADD TO CART <i className="bi bi-cart ms-3"></i>

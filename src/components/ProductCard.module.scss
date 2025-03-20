@@ -29,12 +29,7 @@
   min-height: 30px;
 }
 
-.viewProductBtn {
-  background-color: $primary-color !important;
-  border-color: $primary-color !important;
-
-  &:hover {
-    background-color: $secondary-color !important;
-    border-color: $secondary-color !important;
-  }
+.viewProductBtn:hover {
+  background-color: $secondary-color !important;
+  border-color: $secondary-color !important;
 }

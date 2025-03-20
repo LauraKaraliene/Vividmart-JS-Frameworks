@@ -11,16 +11,11 @@
   border-radius: 8px;
 }
 
-.imageContainer img {
-  object-fit: cover;
-}
-
 .controls button {
   padding: 0px 13px;
   background-color: #eee;
   border: 1px solid #ccc;
   border-radius: 15px;
-  // cursor: pointer;
   transition: background 0.2s ease;
 }
 
