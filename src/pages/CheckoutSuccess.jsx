@@ -5,7 +5,7 @@ import styles from "./CheckoutSuccess.module.scss";
 const CheckoutSuccess = () => {
   return (
     <div className="container text-center mt-5">
-      <div className="alert alert-success col-md-6 mx-auto shadow poppins">
+      <div className=" col-md-6 mx-auto poppins">
         <h2>Thank you for your purchase!</h2>
         <p>Your order was successful.</p>
       </div>

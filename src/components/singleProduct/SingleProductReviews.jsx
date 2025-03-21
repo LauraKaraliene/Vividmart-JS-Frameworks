@@ -1,4 +1,4 @@
-import RatingStars from "./RatingStars";
+import RatingStars from "../RatingStars";
 
 const SingleProductReviews = ({ reviews }) => {
   return (

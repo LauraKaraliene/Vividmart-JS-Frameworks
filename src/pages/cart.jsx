@@ -1,8 +1,8 @@
 import useCartStore from "../store/useCartStore";
-import CartCard from "../components/CartCard";
-import CartTotal from "../components/CartTotal";
+import CartCard from "../components/cart/CartCard";
+import CartTotal from "../components/cart/CartTotal";
 import { useNavigate } from "react-router-dom";
-import EmptyCart from "../components/EmptyCart";
+import EmptyCart from "../components/cart/EmptyCart";
 
 const Cart = () => {
   const { cart, removeFromCart, addToCart, deleteFromCart, clearCart } =

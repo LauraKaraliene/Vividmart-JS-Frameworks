@@ -1,7 +1,7 @@
 import { Spinner } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import SingleProduct from "../components/SingleProduct";
+import SingleProduct from "../components/singleProduct/SingleProduct";
 import { BASE_URL } from "../constants/api";
 
 const ProductPage = () => {

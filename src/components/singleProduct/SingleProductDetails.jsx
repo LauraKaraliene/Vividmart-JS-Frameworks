@@ -1,6 +1,6 @@
 import styles from "./SingleProductDetails.module.scss";
-import useCartStore from "../store/useCartStore";
-import RatingStars from "./RatingStars";
+import useCartStore from "../../store/useCartStore";
+import RatingStars from "../RatingStars";
 
 const SingleProductDetails = ({ product }) => {
   const { addToCart } = useCartStore();
