@@ -1,0 +1,21 @@
+@import "../styles/_variables.scss";
+
+.scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    background-color: $secondary-color;
+    border: none;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
