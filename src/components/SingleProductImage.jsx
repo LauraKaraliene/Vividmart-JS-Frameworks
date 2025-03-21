@@ -6,7 +6,6 @@ const SingleProductImage = ({ image }) => {
       src={image?.url}
       alt={image?.alt || "Product Image"}
       className={`w-100 rounded-3 shadow object-fit-cover ${styles.productImage}`}
-      // className={styles.productImage}
     />
   );
 };

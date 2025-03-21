@@ -3,7 +3,6 @@ import CartCard from "../components/CartCard";
 import CartTotal from "../components/CartTotal";
 import { useNavigate } from "react-router-dom";
 import EmptyCart from "../components/EmptyCart";
-import styles from "./Cart.module.scss";
 
 const Cart = () => {
   const { cart, removeFromCart, addToCart, deleteFromCart, clearCart } =
@@ -40,7 +39,7 @@ const Cart = () => {
 
   return (
     <div className="container-sm mx-auto p-20">
-      <h2 className={`mt-5 mb-3 text-center ${styles.poppins}`}>Your items</h2>
+      <h2 className="mt-5 mb-3 text-center poppins">Your items</h2>
       {cart.length > 0 ? (
         <>
           {cart.map((item) => (

@@ -11,7 +11,6 @@ export const SearchProvider = ({ children }) => {
     fetch("https://v2.api.noroff.dev/online-shop")
       .then((res) => res.json())
       .then((data) => {
-        console.log("Fetched search products:", data.data);
         setProducts(data.data);
       });
   }, []);

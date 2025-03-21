@@ -1,47 +1,47 @@
+import { Spinner } from "react-bootstrap";
 import { BASE_URL } from "../constants/api.js";
 import React, { useEffect, useState } from "react";
 import ProductCard from "./ProductCard.jsx";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import styles from "./ProductsList.module.scss";
 
 function ProductsList() {
   const [products, setProducts] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
-  const [isError, setIsError] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     async function fetchProducts() {
       try {
-        setIsLoading(true);
-        setIsError(false);
-
-        console.log("Fetching products...");
+        setLoading(true);
+        setError(false);
 
         const response = await fetch(BASE_URL);
         if (!response.ok) throw new Error("Failed to fetch products");
-
         const data = await response.json();
-        console.log("API response data:", data);
 
         setProducts(data.data);
       } catch (error) {
         console.error("Error fetching products:", error);
-        setIsError(true);
+        setError(true);
       } finally {
-        setIsLoading(false);
+        setLoading(false);
       }
     }
     fetchProducts();
   }, []);
 
-  //useEffect to track when 'products' updates
-  useEffect(() => {
-    console.log("Updated products state in useEffect:", products);
-  }, [products]);
+  useEffect(() => {}, [products]);
 
-  if (isLoading) return <div>Loading...</div>;
-  if (isError) return <div>Error loading products. Please try again.</div>;
+  if (loading) {
+    return (
+      <div className="d-flex justify-content-center mt-5">
+        <Spinner animation="border" variant="primary" size="lg" />
+      </div>
+    );
+  }
+
+  if (error) return <div>Error loading products. Please try again.</div>;
 
   return (
     <div className="container mt-4">

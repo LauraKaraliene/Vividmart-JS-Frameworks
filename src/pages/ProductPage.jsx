@@ -1,3 +1,4 @@
+import { Spinner } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import SingleProduct from "../components/SingleProduct";
@@ -24,7 +25,13 @@ const ProductPage = () => {
     fetchProduct();
   }, [id]);
 
-  if (loading) return <p>Loading product...</p>;
+  if (loading) {
+    return (
+      <div className="d-flex justify-content-center mt-5">
+        <Spinner animation="border" variant="primary" size="lg" />
+      </div>
+    );
+  }
 
   return <SingleProduct product={product} />;
 };

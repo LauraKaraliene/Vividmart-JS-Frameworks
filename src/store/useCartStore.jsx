@@ -42,8 +42,8 @@ const useCartStore = create(
       clearCart: () => set({ cart: [] }),
     }),
     {
-      name: "cart-storage", // Key in localStorage
-      getStorage: () => localStorage, // Use localStorage
+      name: "cart-storage",
+      getStorage: () => localStorage,
     }
   )
 );

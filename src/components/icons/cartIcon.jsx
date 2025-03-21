@@ -13,12 +13,3 @@ export default function CartIcon() {
     </Link>
   );
 }
-
-// export default function CartIcon({ cartCount }) {
-//   return (
-//     <Link to="/cart" className={styles.cartIcon}>
-//       <FaShoppingCart size={28} />
-//       {cartCount > 0 && <span className={styles.badge}>{cartCount}</span>}
-//     </Link>
-//   );
-// }
