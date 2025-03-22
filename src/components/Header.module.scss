@@ -1,0 +1,25 @@
+@import "../styles/_variables.scss";
+
+.header {
+  background-color: $background-color;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid rgba($primary-color, 0.1);
+}
+
+.navbarBrand {
+  color: $primary-color !important;
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+    color: $secondary-color !important;
+  }
+}
+
+.navLink {
+  color: $primary-color;
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+    color: $secondary-color;
+  }
+}

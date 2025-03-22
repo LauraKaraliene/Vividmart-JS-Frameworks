@@ -1,0 +1,23 @@
+@import "../../styles/_variables.scss";
+
+.cartIcon {
+  position: relative;
+  color: $primary-color;
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: $accent-color;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px 6px;
+  border-radius: 50%;
+}
