@@ -1,8 +1,8 @@
-# Laura's eCommerce Store
+# VividMart - eCommerce store created by Laura Karaliene (School Project)
 
 ![eCommerce Store Screenshot](./src/assets/Screenshot.png)
 
-**Laura's eCommerce Store** is a fictional online store where users can browse products, add them to their cart, and proceed to checkout. The store provides a seamless shopping experience with detailed product information, customer reviews, and intuitive navigation.
+**VividMart** is a fictional online store where users can browse products, add them to their cart, and proceed to checkout. The store provides a seamless shopping experience with detailed product information, customer reviews, and intuitive navigation.
 
 ## Description
 
@@ -45,7 +45,7 @@ The project connects to the **Noroff API**, specifically the **/online-shop** en
 1. Clone the repository:
 
    ```bash
-   git clone https://https://github.com/LauraKaraliene/js-frameworks-ca.git
+   git clone https://github.com/LauraKaraliene/js-frameworks-ca.git
 
    ```
 
