@@ -1,10 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout.jsx";
 import App from "../App.jsx";
-import Cart from "../pages/Cart.jsx";
-import Contact from "../pages/Contact.jsx";
-import CheckoutSuccess from "../pages/CheckoutSuccess.jsx";
-import ProductPage from "../pages/ProductPage.jsx";
+import Cart from "../pages/cart.jsx";
+import Contact from "../pages/contact.jsx";
+import CheckoutSuccess from "../pages/checkoutSuccess.jsx";
+import ProductPage from "../pages/productPage.jsx";
 
 const router = createBrowserRouter([
   {
