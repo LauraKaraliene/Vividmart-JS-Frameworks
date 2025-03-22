@@ -85,7 +85,7 @@ The project connects to the **Noroff API**, specifically the **/online-shop** en
 
 ### Deployed Version
 
-- **[VividMart](https://your-project-name.netlify.app/)** – Check out the live version of the store.
+- **[VividMart](https://vividmartstore.netlify.app/)** – Check out the live version of the store.
 
 ### Recources
 
