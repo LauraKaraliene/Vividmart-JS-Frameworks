@@ -1,6 +1,6 @@
 # VividMart - eCommerce store created by Laura Karaliene (School Project)
 
-![eCommerce Store Screenshot](./src/assets/Screenshot.png)
+![eCommerce Store Screenshot](./src/assets/Screenshot-new.png)
 
 **VividMart** is a fictional online store where users can browse products, add them to their cart, and proceed to checkout. The store provides a seamless shopping experience with detailed product information, customer reviews, and intuitive navigation.
 
