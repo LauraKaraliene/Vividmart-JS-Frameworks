@@ -1,5 +1,5 @@
 import { SearchProvider } from "./context/SearchContext";
-import HomeBanner from "./components/homeBanner";
+import HomeBanner from "./components/HomeBanner";
 import ProductsList from "./components/ProductsList";
 import ScrollToTop from "./components/ScrollToTop";
 import ErrorBoundary from "./components/ErrorBoundary";
